@@ -3,13 +3,9 @@
 **Les composants de ton PC prennent la parole.**
 Le CPU, le GPU et la RAM sont surveillés en temps réel. Quand quelque chose se passe (pic de charge, surchauffe, retour au calme), ils se disputent dans ton terminal, chacun avec sa personnalité, grâce à un LLM local (Ollama). Tu peux aussi leur parler.
 
-```
-── PIC DE CHARGE · CPU · charge 95%, 78°C, 4.3 GHz ──
-15:39:18 CPU │ Sérieusement, j'ai dépassé les 4 GHz et je sens ma température monter !
-15:39:20 GPU │ Normal, je suis le vrai moteur ici : j'ai besoin de plus de watts !
-15:39:22 RAM │ Fermez des onglets, par pitié... j'étouffe...
-```
-*(exemple de sortie ; les répliques sont générées à chaque fois par le modèle)*
+![Démo](docs/demo.png)
+
+*Exemple de sortie ; les répliques sont générées à chaque fois par le modèle.*
 
 ## Fonctionnalités
 
