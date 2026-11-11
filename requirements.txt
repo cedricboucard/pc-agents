@@ -1,0 +1,4 @@
+psutil>=5.9
+requests>=2.31
+nvidia-ml-py>=12.535   # optionnel : uniquement pour le GPU NVIDIA (module `pynvml`)
+colorama>=0.4          # optionnel : couleurs ANSI sous vieux terminaux Windows
