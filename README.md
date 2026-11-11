@@ -1,4 +1,4 @@
-# pc_agents
+# pc-agents
 
 **Les composants de ton PC prennent la parole.**
 Le CPU, le GPU et la RAM sont surveillés en temps réel. Quand quelque chose se passe (pic de charge, surchauffe, retour au calme), ils se disputent dans ton terminal, chacun avec sa personnalité, grâce à un LLM local (Ollama). Tu peux aussi leur parler.
@@ -32,8 +32,8 @@ Le CPU, le GPU et la RAM sont surveillés en temps réel. Quand quelque chose se
 ## Installation
 
 ```bash
-git clone https://github.com/<ton-pseudo>/pc_agents.git
-cd pc_agents
+git clone https://github.com/cedricboucard/pc-agents.git
+cd pc-agents
 
 python3 -m venv .venv
 source .venv/bin/activate
@@ -70,7 +70,7 @@ python main.py --model qwen2.5:7b --turns 3 --no-typewriter
 Pour lancer le tout en un mot, ajoute un alias dans `~/.bashrc` :
 
 ```bash
-alias pcparle="$HOME/pc_agents/.venv/bin/python $HOME/pc_agents/main.py"
+alias pcparle="$HOME/pc-agents/.venv/bin/python $HOME/pc-agents/main.py"
 ```
 
 ### Parler aux composants
@@ -124,7 +124,7 @@ Les system prompts sont dans `personalities.py`. Chaque agent reçoit aussi des 
 ## Structure du projet
 
 ```
-pc_agents/
+pc-agents/
 ├── main.py            # orchestration (threads, arguments, chat)
 ├── config.py          # seuils, cooldowns, paramètres LLM, rendu
 ├── telemetry.py       # collecteurs psutil / pynvml + mode démo
